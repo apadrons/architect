@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+{% block title %} Gallery {% endblock %}
+{% block content %}
+
+<div class="bg-zinc-800 py-4 w-3/4 md:w-3/4 rounded-3xl px-6 pt-8 pb-12 ">
+    <div
+    class="w-full text-center text-white text-lg font-bold"
+  >
+    <p class="mb-2 md:text-5xl text-2xl  py-4" >Gallery </p>
+  </div>
+  <div class="grid md:grid-cols-3 gap-4">
+    {% for project in projects %}
+
+        <div class="flex justify-center"><img class="h-40 md:h-80 w-52 md:w-80 rounded-3xl" src="{{project.image.url}}" alt=""></div>
+    {% endfor %}
+</div>
+</div>
+
+{% endblock %}

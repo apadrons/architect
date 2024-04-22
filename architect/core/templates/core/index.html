@@ -1,0 +1,77 @@
+
+
+{% extends 'core/base_home.html' %}
+{% block title %} Index {% endblock %}
+{% block content %}
+{% load static %}
+<div
+  class="image-container h-[250px] md:h-[600px] top-0 flex justify-center items-center text-white text-xl"
+>
+  <div class="">
+    <p class="text-center text-xl md:text-6xl font-extrabold">
+      From Concept to Construction, <br />
+      We're with You Every Step
+    </p>
+  </div>
+</div>
+<div class="bg-zinc-800 py-6">
+  <div class="w-full text-center text-white text-lg font-bold">
+    <p class="mb-2 md:text-3xl py-6">ARCHITECT AND PLANNER</p>
+  </div>
+  <div
+    class="w-3/4 md:w-3/5 text-center text-white text-xs md:text-lg font-normal mx-auto"
+  >
+    <p class="leading-6 md:leading-10">
+      An accomplished architect and urban planner specialized in the design and
+      construction of exceptional buildings, with a rich portfolio boasting over
+      a thousand successful projects. With a keen eye for detail and a passion
+      for innovative design, I bring over 20 years of expertise to every
+      project, ensuring that each structure is not only visually striking but
+      also functionally superior.
+    </p>
+  </div>
+</div>
+<div class="bg-slate-400   md:flex" ><img class="md:w-1/2" src="{% static 'core/frame.jpg' %}" alt="">
+  <img class="md:w-1/2 hidden md:block"src="{% static 'core/final.jpg' %}" alt=""></div>
+<div class="bg-zinc-800 py-4">
+  <div class="w-full text-center text-white text-lg font-bold">
+    <p class="mb-2 md:text-3xl py-4">AREAS OF WORK</p>
+  </div>
+  <div
+    class="w-3/4 md:w-3/5 text-center text-white text-xs md:text-lg mx-auto md:text-normal py-6"
+  >
+    <p class="leading-6 md:leading-10">
+      From iconic landmarks to bespoke residential dwellings, my commitment to
+      excellence and dedication to pushing the boundaries of architectural
+      possibility have earned me a reputation as a trusted visionary in the
+      industry.
+    </p>
+  </div>
+  <div class="grid grid-cols-3 py-4">
+    <div
+      class="flex flex-col justify-center text-sm md:text-2xl font-extrabold items-center"
+    >
+      <p>COMMERCIAL</p>
+      <div class="w-24 md:w-80 py-2 hover:opacity-80 hover:cursor-pointer">
+        <img class="rounded-xl" src="{% static 'core/commercial.jpg' %}" alt="" />
+      </div>
+    </div>
+    <div
+      class="flex flex-col justify-center text-sm md:text-2xl font-extrabold items-center"
+    >
+      <p>RESIDENTIAL</p>
+      <div class="w-24 md:w-80 py-2 hover:opacity-80 hover:cursor-pointer">
+        <img class="rounded-xl" src="{% static 'core/residential.jpg' %}" alt="" />
+      </div>
+    </div>
+    <div
+      class="flex flex-col justify-center text-sm md:text-2xl font-extrabold items-center"
+    >
+      <p>INDUSTRIAL</p>
+      <div class="w-24 md:w-80 py-2 hover:opacity-80 hover:cursor-pointer">
+        <img class="rounded-xl" src="{% static 'core/industrial.jpg' %}" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
